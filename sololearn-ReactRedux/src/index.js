@@ -55,7 +55,7 @@ ReactDOM.render(
   <ContactManager data={contacts} />, 
   document.getElementById('root')
 );
-
+// ----------Class in react------------
 // class Hello extends React.Component {
 //   render() {
 //     return <h1>Hello world.</h1>;
@@ -68,13 +68,32 @@ ReactDOM.render(
 //   document.getElementById('root')
 // );
 
-// props
+// -------props----------------
 
 // function Hello(props) {
 //   return <p>Hello, {props.name}!</p>;
 // }
 
 // const el = <Hello name="David" />; 
+// ReactDOM.render(
+//   el, 
+//   document.getElementById('root')
+// );
+
+// ------------component using another component---------
+// function Hello(props) {
+//   return <p>Hello, {props.name}!</p>;
+// }
+
+// function App() {
+//   return <div>
+//     <Hello name="David" />
+//     <Hello name="James" />
+//     <Hello name="Amy" />
+//   </div>;
+// }
+
+// const el = <App />; 
 // ReactDOM.render(
 //   el, 
 //   document.getElementById('root')
