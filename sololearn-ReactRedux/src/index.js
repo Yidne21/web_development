@@ -279,3 +279,15 @@ ReactDOM.render(
 //   );
 //   return <ul>{listItems}</ul>
 // }
+//
+//---------Sharing State between components------------------
+// function ContactManager(props) {
+//   const [contacts, setContacts] = useState(props.data);
+
+//   return (
+//     <div>
+//       <AddPersonForm />
+//       <PeopleList data={contacts} />
+//     </div>
+//   );
+// } 
