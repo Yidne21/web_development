@@ -98,3 +98,80 @@ ReactDOM.render(
 //   el, 
 //   document.getElementById('root')
 // );
+
+
+// ------props---------
+
+// function Item(props) {
+//   return <div className="item">
+//   <b>Name:</b> {props.name} <br />
+//   <b>Price:</b> ${props.price}
+//   </div>;
+// }
+
+// function App() {
+//   return <div>
+//     <Item name="Cheese" price="4.99" />
+//     <Item name="Bread" price="1.5" />
+//     <Item name="Ice cream" price="24" />
+//   </div>;
+// }
+
+// const el = <App />; 
+// ReactDOM.render(
+//   el, 
+//   document.getElementById('root')
+// );
+
+// ------State in react-------------
+// class Hello extends React.Component {
+//   state = {
+//     name: "James"
+//   }
+//   render() {
+//     return <h1>Hello {this.state.name}.</h1>;    
+//   }
+// }
+
+// const el = <Hello />; 
+// ReactDOM.render(
+//   el, 
+//   document.getElementById('root')
+// );
+// // -------A counter button using class component
+// class counter extends React.Component{
+// state = {
+//   Counter : 0
+// }
+// increment = () => {
+//   this.setState(
+//     {
+//       Counter: this.state.Counter + 1
+//     }
+//   );
+// }
+// render(){
+//   return <div>
+//     <p>{this.state.Counter}</p>
+//     <button onClick={this.increment}> Increment</button>
+//   </div>;
+// }
+// }
+
+// ----- hooks Example a counter button --------------
+// function Counter() {
+//   const [counter, setCounter] = useState(0);
+
+//   function increment() {
+//     setCounter(counter+1);
+//   }
+
+//   return <div>
+//   <p>{counter}</p>
+//   <button onClick={increment}>
+//     Increment
+//   </button>
+//   </div>;
+// }
+
+// --------
