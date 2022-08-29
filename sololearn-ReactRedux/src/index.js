@@ -248,7 +248,7 @@ ReactDOM.render(
 //   </div>;
 // }
 
-//-----Forms-------
+//-----Forms---- The Example is a controlled Component -------
 // function AddForm() {
 //   const [sum, setSum] = useState(0);
 //   const [num, setNum] = useState(0);
@@ -267,4 +267,15 @@ ReactDOM.render(
 //   <input type="submit" value="Add" />
 //   <p> Sum is {sum} </p>
 //   </form>;
+// }
+// -- Rendering A list in React------------
+// const arr = ["Yidne", "AA", "wolkite"];
+// <Mylist data = {arr} />
+// // the componet logic
+// function Mylist(props) {
+//   const arr = props.data;
+//   const listItems = arr.map((val) =>
+//   <li>{val}</li>
+//   );
+//   return <ul>{listItems}</ul>
 // }
