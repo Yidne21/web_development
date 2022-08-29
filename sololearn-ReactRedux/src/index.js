@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 
@@ -174,4 +174,76 @@ ReactDOM.render(
 //   </div>;
 // }
 
-// --------
+// -------- The Life cycle Method ------
+// ComponentDidMount(){
+//   this.setState({contacts:42});
+// }
+// ComponentDidmount()
+// ComponentWillUnmount()
+// ComponentDidUpdate()
+// example
+// let x = 0;
+// class Test extends React.Component {
+//   componentDidMount() {
+//     x+=3;
+//   }
+//   render() {
+//     return null;
+//   }
+// }
+// -------------The useEffect Hooks--------- 
+//-------------Example-----------
+// function Counter() {
+//   const [counter, setCounter] = useState(0);
+
+//   useEffect(() => {
+//     alert("Number of clicks: " + counter);
+//   });
+
+//   function increment() {
+//     setCounter(counter+1);
+//   }
+//   return <div>
+//   <p>{counter}</p>
+//   <button onClick={increment}>Increment</button>
+//   </div>;
+// }
+// useEffect(() => {
+//   // do something
+  
+//   return () => {
+//     // cleanup
+//   }; 
+// });
+// -----Handling Events IN React-------
+
+/* <button onClick={handleClick}>ClickME</button> */
+// function Counter() {
+//   const [counter, setCounter] = useState(0);
+
+//   function increment() {
+//     setCounter(counter+1);
+//   }
+//   return <div>
+//   <p>{counter}</p>
+//   <button onClick={increment}>Increment</button>
+//   </div>;
+// }
+
+// ----------Handling User input--------------
+// function Converter() {
+//   const [km, setKm] = useState(0);
+
+//   function handleChange(e) {
+//     setKm(e.target.value);
+//   }
+//   function convert(km) {
+//     return (km/1.609).toFixed(2);
+//   }
+
+//   return <div>
+//   <input type="text" value={km}
+//      onChange={handleChange} />
+//   <p> {km} km is {convert(km)} miles </p>
+//   </div>;
+// }
