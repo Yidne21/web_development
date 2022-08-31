@@ -280,7 +280,7 @@ ReactDOM.render(
 //   return <ul>{listItems}</ul>
 // }
 //
-//---------Sharing State between components------------------
+//---------Sharing State between components only flow flow from parent to child------------------
 // function ContactManager(props) {
 //   const [contacts, setContacts] = useState(props.data);
 
@@ -291,3 +291,21 @@ ReactDOM.render(
 //     </div>
 //   );
 // } 
+
+//-------------Action Creator-------------
+// function addContact(person){
+//   return{
+//     type: 'ADD_CONTACT',
+//     payload: person
+//   }
+// }
+
+// ------Reducer Function -------
+// function contactsApp(state, action) {
+//   switch(action.type){
+//     case 'ADD_CONTACT':
+//       return [...state, action.person]
+//     default:
+//       return state
+//   }
+// }
